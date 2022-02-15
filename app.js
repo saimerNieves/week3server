@@ -162,13 +162,18 @@ app.post("/updateEmployee", (request, response)=>{
    
 
 
+   
 
-//setup port for connection 
-app.listen(3005, ()=>{
+   const PORT = process.env.PORT || 3000
 
-    console.log("Connected on port 3005")
-})
-
+   //setup port for connection 
+   app.listen(PORT, ()=>{
+   
+       console.log("Connected on port 3000")
+   })
+   
+   
+   
 
 
 

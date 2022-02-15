@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "mongoose": "^6.2.1",
+    "nodemon": "^2.0.15"
+  },
+  "name": "se373_58_advwebdev_assignment3",
+  "description": "Rebuild of Json",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saimerNieves/SE373_58_AdvWebDev_Assignment3.git"
+  },
+  "author": "Saimer Nieves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saimerNieves/SE373_58_AdvWebDev_Assignment3/issues"
+  },
+  "homepage": "https://github.com/saimerNieves/SE373_58_AdvWebDev_Assignment3#readme"
+}

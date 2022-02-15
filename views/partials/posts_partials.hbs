@@ -1,0 +1,43 @@
+<div class="posts">
+
+    <div class="row justify-content-center">
+        {{#each posts}}
+        <div class="col-lg-7" style = "margin-top: 50px;">
+
+            <div class="card">
+                {{!-- Insertand handlebar variable into image source --}}
+                <img src="{{this.image}}" alt="Image From Site" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title"> 
+                        {{!-- inserted Handlebar variable into h5 as author name Must be in .notation--}}
+                        {{this.author}}
+                    </h5>
+
+                    {{#if this.comments}} <!--Starts if statement in  handle bars-->
+
+                    <ul class="list-group">
+                       {{!-- Logic will go here for list  --}}
+
+                       {{#each this.comments}} <!--Open for each to add each element as a new Li -->
+                        <li class="list-group-item">{{getShortComment this}}</li>
+                        {{/each}}
+                    </ul>
+
+                    {{else}}
+
+                     <ul class="list-group">
+                        <li class="list-group-item">Add your comment here</li>
+                     </ul>
+
+                    {{/if}} <!--Ends if statement in  handle bars-->
+
+                 
+                </div>
+            </div>
+
+        </div>
+        {{/each}}
+    </div>
+
+
+</div>
